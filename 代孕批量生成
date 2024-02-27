@@ -1,0 +1,12 @@
+# 基础词列表
+base_words = ['代孕', '辅助生殖', '生育']
+
+# 修饰词列表
+modifier_words = ['医院', '机构', '服务', '流程', '法律']
+
+# 使用列表推导式生成关键词组合
+keywords = [f"{base}{modifier}" for base in base_words for modifier in modifier_words]
+
+# 打印生成的关键词
+for keyword in keywords:
+    print(keyword)
